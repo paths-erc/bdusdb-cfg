@@ -1,0 +1,64 @@
+[
+    {
+        "name": "id",
+        "label": "PAThs ID",
+        "type": "text",
+        "readonly": "1",
+        "disabled": "1"
+    },
+    {
+        "name": "creator",
+        "label": "Record creator",
+        "type": "text",
+        "readonly": "1",
+        "disabled": "1",
+        "hide": "1"
+    },
+    {
+        "name": "fullname",
+        "label": "Full collection name",
+        "type": "text",
+        "check": [
+            "no_dupl"
+        ]
+    },
+    {
+        "name": "cmclname",
+        "label": "CMCL name",
+        "type": "text"
+    },
+    {
+        "name": "country",
+        "label": "Country",
+        "type": "combo_select",
+        "get_values_from_tb": "paths__collections:country"
+    },
+    {
+        "name": "town",
+        "label": "Town",
+        "type": "combo_select",
+        "get_values_from_tb": "paths__collections:town"
+    },
+    {
+        "name": "institution",
+        "label": "Institution",
+        "type": "combo_select",
+        "get_values_from_tb": "paths__collections:institution"
+    },
+    {
+        "name": "name",
+        "label": "Name",
+        "type": "text"
+    },
+    {
+        "name": "notes",
+        "label": "Notes",
+        "type": "long_text"
+    },
+    {
+        "name": "editors",
+        "label": "Editors",
+        "type": "multi_select",
+        "vocabulary_set": "persons"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "name": "id",
+        "label": "ID",
+        "type": "text",
+        "readonly": "1",
+        "hide": "1"
+    },
+    {
+        "name": "quireno",
+        "label": "Quire no.",
+        "type": "text"
+    },
+    {
+        "name": "quirelayout",
+        "label": "Quire layout",
+        "type": "text",
+        "help": "Describe only first half, using: 1 for singleton; 1+ for singleton with stub; 1x for union; 1* for union with lost second leaf; 0* for union with lost first leaf; 1x* for lost union; 2 for union all in one side, etc. Such as 1 faces 0; 1+ faces 0+; 1* faces 0*; 1x faces 1x; 2 faces 0; etc."
+    },
+    {
+        "name": "quireayoutnotes",
+        "label": "Notes on quire layout",
+        "type": "long_text"
+    },
+    {
+        "name": "quirepaptype",
+        "label": "Papyrus quire typology",
+        "type": "select",
+        "vocabulary_set": "pap_quire_typologies"
+    },
+    {
+        "name": "quirepartype",
+        "label": "Parchment quire typology",
+        "type": "select",
+        "vocabulary_set": "par_quire_typologies"
+    },
+    {
+        "name": "quirenotes",
+        "label": "Quire notes",
+        "type": "long_text"
+    }
+]

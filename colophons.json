@@ -1,0 +1,118 @@
+[
+    {
+        "name": "id",
+        "label": "Colophon ID",
+        "type": "text",
+        "readonly": true
+    },
+    {
+        "name": "creator",
+        "label": "Record creator",
+        "type": "text",
+        "hide": "1"
+    },
+    {
+        "name": "msid",
+        "label": "CLM",
+        "type": "select",
+        "get_values_from_tb": "paths__manuscripts:id",
+        "check": [
+            "not_empty"
+        ]
+    },
+    {
+        "name": "chronofrom",
+        "label": "Date from",
+        "type": "text",
+        "check": [
+            "int"
+        ]
+    },
+    {
+        "name": "chronoto",
+        "label": "Date to",
+        "type": "text",
+        "check": [
+            "int"
+        ]
+    },
+    {
+        "name": "datingcriteria",
+        "label": "Dating criteria",
+        "type": "long_text"
+    },
+    {
+        "name": "dialect",
+        "label": "Dialects",
+        "type": "multi_select",
+        "vocabulary_set": "dialects"
+    },
+    {
+        "name": "dialectnotes",
+        "label": "Notes on dialects or languages",
+        "type": "long_text"
+    },
+    {
+        "name": "greektext",
+        "label": "Greek text",
+        "type": "boolean"
+    },
+    {
+        "name": "writingaxis",
+        "label": "Axis",
+        "type": "select",
+        "vocabulary_set": "axis"
+    },
+    {
+        "name": "thickandthin",
+        "label": "Thick-and-thin style",
+        "type": "boolean"
+    },
+    {
+        "name": "cryptography",
+        "label": "Cryptography",
+        "type": "boolean"
+    },
+    {
+        "name": "minusculecopitc",
+        "label": "Coptic minuscule script",
+        "type": "boolean"
+    },
+    {
+        "name": "minusculegreek",
+        "label": "Greek minuscule script",
+        "type": "boolean"
+    },
+    {
+        "name": "description",
+        "label": "Description",
+        "type": "long_text"
+    },
+    {
+        "name": "text",
+        "label": "Text",
+        "type": "long_text"
+    },
+    {
+        "name": "translation",
+        "label": "Translation",
+        "type": "long_text"
+    },
+    {
+        "name": "taggedtext",
+        "label": "Tagged text",
+        "type": "long_text"
+    },
+    {
+        "name": "editors",
+        "label": "Editors",
+        "type": "multi_select",
+        "vocabulary_set": "persons"
+    },
+    {
+        "name": "status",
+        "label": "Status",
+        "type": "select",
+        "vocabulary_set": "status"
+    }
+]

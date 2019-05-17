@@ -1,0 +1,93 @@
+[
+    {
+        "name": "id",
+        "label": "ID",
+        "type": "text",
+        "readonly": true,
+        "disabled": true
+    },
+    {
+        "name": "creator",
+        "label": "Record creator",
+        "type": "text",
+        "readonly": "1",
+        "disabled": "1",
+        "hide": true
+    },
+    {
+        "name": "name",
+        "label": "Name",
+        "type": "text",
+        "check": [
+            "no_dupl"
+        ]
+    },
+    {
+        "name": "copticname",
+        "label": "Name in Coptic",
+        "type": "text",
+        "check": [
+            "no_dupl"
+        ]
+    },
+    {
+        "name": "greekname",
+        "label": "Name in Greek",
+        "type": "text",
+        "check": [
+            "no_dupl"
+        ]
+    },
+    {
+        "name": "viaf",
+        "label": "VIAF ID",
+        "type": "text",
+        "check": [
+            "no_dupl"
+        ]
+    },
+    {
+        "name": "title",
+        "label": "Title",
+        "type": "select",
+        "vocabulary_set": "titles"
+    },
+    {
+        "name": "cmclname",
+        "label": "CMCL name",
+        "type": "text"
+    },
+    {
+        "name": "bio",
+        "label": "Short biography of the “Author”",
+        "type": "long_text"
+    },
+    {
+        "name": "birth",
+        "label": "Year of birth",
+        "type": "text",
+        "check": [
+            "int"
+        ]
+    },
+    {
+        "name": "death",
+        "label": "Year of death",
+        "type": "text",
+        "check": [
+            "int"
+        ]
+    },
+    {
+        "name": "editors",
+        "label": "Editors",
+        "type": "multi_select",
+        "vocabulary_set": "persons"
+    },
+    {
+        "name": "status",
+        "label": "Status",
+        "type": "select",
+        "vocabulary_set": "status"
+    }
+]

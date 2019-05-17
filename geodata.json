@@ -1,0 +1,14 @@
+[
+    {
+        "name": "id",
+        "label": "ID",
+        "type": "text",
+        "readonly": "1",
+        "hide": "1"
+    },
+    {
+        "name": "geometry",
+        "label": "Coordinates (WKT format)",
+        "type": "text"
+    }
+]

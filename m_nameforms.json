@@ -1,0 +1,25 @@
+[
+    {
+        "name": "id",
+        "label": "ID",
+        "type": "text",
+        "readonly": "1",
+        "hide": "1"
+    },
+    {
+        "name": "nameform",
+        "label": "Name form",
+        "type": "text"
+    },
+    {
+        "name": "language",
+        "label": "Language",
+        "type": "combo_select",
+        "get_values_from_tb":"paths__m_nameforms:language"
+    },
+    {
+        "name": "transliteration",
+        "label": "Transliteration",
+        "type": "text"
+    }
+]

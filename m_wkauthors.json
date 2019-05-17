@@ -1,0 +1,40 @@
+[
+  {
+    "name": "id",
+    "label": "ID",
+    "type": "text",
+    "readonly": "1",
+    "hide": "1"
+  },
+  {
+    "name": "type",
+    "label": "Author type",
+    "type": "select",
+    "vocabulary_set": "author_type"
+  },
+  {
+    "name": "author",
+    "label": "Author name",
+    "type": "select",
+    "id_from_tb": "paths__authors"
+  },
+  {
+      "name": "source",
+      "label": "Source of information",
+      "type": "select",
+      "vocabulary_set": "text_part"
+  },
+  {
+      "name": "notes",
+      "label": "Notes on authorship",
+      "type": "long_text"
+  },
+  {
+    "name": "sort",
+    "label": "Sort",
+    "type": "text",
+    "check": [
+      "int"
+    ]
+  }
+]

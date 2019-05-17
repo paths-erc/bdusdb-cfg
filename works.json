@@ -1,0 +1,122 @@
+[
+    {
+        "name": "id",
+        "label": "Unique ID",
+        "type": "text",
+        "readonly": "1",
+        "disabled": "1",
+        "hide": "1"
+    },
+    {
+        "name": "creator",
+        "label": "Record creator",
+        "type": "text",
+        "readonly": "1",
+        "disabled": "1",
+        "hide": "1"
+    },
+    {
+        "name": "cmcl",
+        "label": "Clavis Coptica",
+        "type": "text",
+        "check": [
+            "no_dupl"
+        ],
+        "help": "Clavis Coptica (CMCL)"
+    },
+    {
+        "name": "title",
+        "label": "Conventional title",
+        "type": "text"
+    },
+    {
+        "name": "cpg",
+        "label": "CPG",
+        "type": "text",
+        "help": "Clavis Patrum Graecorum"
+    },
+    {
+        "name": "cant",
+        "label": "CANT",
+        "type": "text",
+        "help": "Clavis Apocryphorum Novi Testamenti"
+    },
+    {
+        "name": "cavt",
+        "label": "CAVT",
+        "type": "text",
+        "help": "Clavis Apocryphorum Veteris Testamenti"
+    },
+    {
+        "name": "bho",
+        "label": "BHO",
+        "type": "text",
+        "help": "Bibliotheca Hagiographica Orientalis"
+    },
+    {
+        "name": "bhg",
+        "label": "BHG",
+        "type": "text",
+        "help": "Bibliotheca Hagiographica Graeca"
+    },
+    {
+        "name": "bhl",
+        "label": "BHL",
+        "type": "text",
+        "help": "Bibliotheca Hagiographica Latina"
+    },
+    {
+        "name": "cae",
+        "label": "CAe",
+        "type": "text",
+        "help": "Clavis Aethiopica"
+    },
+    {
+        "name": "period",
+        "label": "Period",
+        "type": "multi_select",
+        "vocabulary_set": "period",
+        "readonly": "1",
+        "disabled": "1",
+        "hide": "1"
+    },
+    {
+        "name": "problems",
+        "label": "Problems",
+        "type": "long_text",
+        "readonly": "1",
+        "disabled": "1",
+        "hide": "1"
+    },
+    {
+        "name": "shelfmarks",
+        "label": "Cmcl's shelfmarks",
+        "type": "text",
+        "readonly": "1",
+        "disabled": "1",
+        "hide": "1"
+    },
+    {
+        "name": "notes",
+        "label": "Notes",
+        "type": "long_text"
+    },
+    {
+        "name": "litperiod",
+        "label": "Literary period",
+        "type": "select",
+        "vocabulary_set": "literary_period"
+    },
+    {
+        "name": "editors",
+        "label": "Editors",
+        "type": "multi_select",
+        "vocabulary_set": "persons"
+    },
+    {
+        "name": "status",
+        "label": "Status",
+        "type": "select",
+        "vocabulary_set": "status"
+    }
+]

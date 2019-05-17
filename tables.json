@@ -1,0 +1,290 @@
+{
+    "tables": [
+        {
+            "name": "paths__manuscripts",
+            "label": "Manuscripts",
+            "order": "id",
+            "id_field": "id",
+            "preview": [
+                "id",
+                "cmclid",
+                "tm",
+                "ldab",
+                "bookform",
+                "writingsupport"
+            ],
+            "plugin": [
+                "paths__m_biblio",
+                "paths__m_quires",
+                "paths__m_shelfmarks",
+                "paths__m_msplaces",
+                "paths__m_hands"
+            ],
+            "link": [
+                {
+                    "other_tb": "paths__titles",
+                    "fld": [
+                        {
+                            "my": "id",
+                            "other": "msid"
+                        }
+                    ]
+                },
+                {
+                    "other_tb": "paths__colophons",
+                    "fld": [
+                        {
+                            "my": "id",
+                            "other": "msid"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "paths__collections",
+            "label": "Collections",
+            "order": "fullname",
+            "id_field": "fullname",
+            "preview": [
+                "id",
+                "fullname",
+                "cmclname",
+                "country",
+                "town",
+                "institution",
+                "name",
+                "notes"
+            ],
+            "plugin": [
+                "paths__m_biblio"
+            ],
+            "backlinks": [
+                "paths__manuscripts:paths__m_shelfmarks:collection"
+            ]
+        },
+        {
+            "name": "paths__works",
+            "label": "Works",
+            "order": "cmcl",
+            "id_field": "cmcl",
+            "preview": [
+                "id",
+                "cmcl",
+                "title",
+                "cpg"
+            ],
+            "plugin": [
+                "paths__m_biblio",
+                "paths__m_wkauthors"
+            ],
+            "link": [
+                {
+                    "other_tb": "paths__titles",
+                    "fld": [
+                        {
+                            "my": "cmcl",
+                            "other": "workcc"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "paths__titles",
+            "label": "Titles",
+            "order": "cc",
+            "id_field": "cc",
+            "preview": [
+                "cc",
+                "type",
+                "workcc",
+                "msid"
+            ],
+            "plugin": [
+                "paths__m_biblio"
+            ],
+            "link": [
+                {
+                    "other_tb": "paths__works",
+                    "fld": [
+                        {
+                            "my": "workcc",
+                            "other": "cmcl"
+                        }
+                    ]
+                },
+                {
+                    "other_tb": "paths__manuscripts",
+                    "fld": [
+                        {
+                            "my": "msid",
+                            "other": "id"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "paths__colophons",
+            "label": "Colophons",
+            "order": "id",
+            "id_field": "id",
+            "preview": [
+                "id",
+                "msid",
+                "dialect",
+                "chronofrom",
+                "chronoto",
+                "datingcriteria"
+            ],
+            "plugin": [
+                "paths__m_biblio"
+            ],
+            "link": [
+                {
+                    "other_tb": "paths__manuscripts",
+                    "fld": [
+                        {
+                            "my": "msid",
+                            "other": "id"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "paths__authors",
+            "label": "Authors",
+            "order": "name",
+            "id_field": "name",
+            "preview": [
+                "name",
+                "title",
+                "copticname",
+                "greekname",
+                "cmclname"
+            ],
+            "plugin": [
+                "paths__m_biblio"
+            ],
+            "backlinks": [
+                "paths__works:paths__m_wkauthors:author"
+            ]
+        },
+        {
+            "name": "paths__places",
+            "label": "Places",
+            "order": "name",
+            "id_field": "name",
+            "preview": [
+                "id",
+                "name",
+                "tm",
+                "pleiades",
+                "region",
+                "area",
+                "episcopalsee"
+            ],
+            "plugin": {
+                "0": "paths__m_biblio",
+                "1": "paths__m_toponyms",
+                "3": "paths__m_placephase"
+            },
+            "backlinks": [
+                "paths__manuscripts:paths__m_msplaces:place"
+            ]
+        },
+        {
+            "name": "paths__persons",
+            "label": "Persons attested in colophons",
+            "order": "name",
+            "id_field": "name",
+            "preview": [
+                "id",
+                "name",
+                "type",
+                "profession",
+                "patronymic"
+            ],
+            "plugin": [
+                "paths__m_nameforms",
+                "paths__m_biblio"
+            ]
+        },
+        {
+            "name": "paths__biblio",
+            "label": "Bibliographic database",
+            "order": "short",
+            "id_field": "short",
+            "preview": [
+                "short",
+                "title",
+                "year",
+                "zotero"
+            ]
+        },
+        {
+            "name": "paths__files",
+            "label": "Files",
+            "order": "id",
+            "id_field": "id",
+            "preview": [
+                "id",
+                "filename",
+                "ext",
+                "description"
+            ]
+        },
+        {
+            "name": "paths__m_biblio",
+            "label": "Bibliography",
+            "is_plugin": "1"
+        },
+        {
+            "name": "paths__m_hands",
+            "label": "Hands",
+            "is_plugin": "1"
+        },
+        {
+            "name": "paths__m_msplaces",
+            "label": "Relevant places",
+            "is_plugin": "1"
+        },
+        {
+            "name": "paths__m_quires",
+            "label": "Reconstructed quire layout",
+            "is_plugin": "1"
+        },
+        {
+            "name": "paths__m_wkauthors",
+            "label": "Authorship",
+            "is_plugin": "1"
+        },
+        {
+            "name": "paths__m_placephase",
+            "label": "Other periods",
+            "is_plugin": "1"
+        },
+        {
+            "name": "paths__m_shelfmarks",
+            "label": "Shelfmarks",
+            "is_plugin": "1"
+        },
+        {
+            "name": "paths__m_toponyms",
+            "label": "Place names",
+            "is_plugin": "1"
+        },
+        {
+            "name": "paths__m_nameforms",
+            "label": "Other name forms attestation",
+            "is_plugin": "1"
+        },
+        {
+            "name": "paths__geodata",
+            "label": "Geographical coordinates",
+            "is_plugin": "1"
+        }
+    ]
+}

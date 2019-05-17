@@ -1,0 +1,170 @@
+[
+    {
+        "name": "id",
+        "label": "PAThs ID",
+        "type": "text",
+        "readonly": "1"
+    },
+    {
+        "name": "creator",
+        "label": "Creator",
+        "type": "text",
+        "hide": "1"
+    },
+    {
+        "name": "name",
+        "label": "Site name",
+        "type": "text",
+        "help": "English version of best known place name",
+        "check": [
+            "no_dupl"
+        ]
+    },
+    {
+        "name": "tm",
+        "label": "Trismegistos GeoID",
+        "type": "text"
+    },
+    {
+        "name": "pleiades",
+        "label": "Pleiades Id",
+        "type": "text"
+    },
+    {
+        "name": "region",
+        "label": "Region",
+        "type": "select",
+        "vocabulary_set": "region"
+    },
+    {
+        "name": "area",
+        "label": "Area",
+        "type": "combo_select",
+        "get_values_from_tb": "paths__places:area"
+    },
+    {
+        "name": "meris",
+        "label": "Meris",
+        "type": "combo_select",
+        "get_values_from_tb": "paths__places:meris"
+    },
+    {
+        "name": "nomos",
+        "label": "Nome",
+        "type": "select",
+        "vocabulary_set": "nomos"
+    },
+    {
+        "name": "province",
+        "label": "Province",
+        "type": "select",
+        "vocabulary_set": "provinces"
+    },
+    {
+        "name": "episcopalsee",
+        "label": "Episcopal see",
+        "type": "boolean",
+        "help": "True if the site has ever been an episcopal see"
+    },
+    {
+        "name": "episcopalseefrom",
+        "label": "Episcopal see from year",
+        "type": "text"
+    },
+    {
+        "name": "notesepiscopalsee",
+        "label": "Notes on episcopal see",
+        "type": "long_text"
+    },
+    {
+        "name": "typology",
+        "label": "Typology",
+        "type": "select",
+        "vocabulary_set": "site_typology"
+    },
+    {
+        "name": "toporeferredto",
+        "label": "Topographically referred to",
+        "type": "select",
+        "id_from_tb": "paths__places"
+    },
+    {
+        "name": "notestoporeferredto",
+        "label": "Notes on topographical reference",
+        "type": "long_text"
+    },
+    {
+        "name": "historicalreference",
+        "label": "Historical connections \/ references",
+        "type": "long_text"
+    },
+    {
+        "name": "datefrom",
+        "label": "Date from",
+        "type": "text",
+        "check": [
+            "int"
+        ]
+    },
+    {
+        "name": "dateto",
+        "label": "Date to",
+        "type": "text",
+        "check": [
+            "int"
+        ]
+    },
+    {
+        "name": "datingcriteria",
+        "label": "Dating criteria and notes",
+        "type": "long_text"
+    },
+    {
+        "name": "description",
+        "label": "Description",
+        "type": "long_text"
+    },
+    {
+        "name": "hasplans",
+        "label": "Plans",
+        "type": "boolean"
+    },
+    {
+        "name": "hasphotos",
+        "label": "Photos",
+        "type": "boolean"
+    },
+    {
+        "name": "hasmonastery",
+        "label": "Does the site include any monasteries?",
+        "type": "boolean"
+    },
+    {
+        "name": "monasterynotes",
+        "label": "Notes on monastery",
+        "type": "long_text"
+    },
+    {
+        "name": "isnomoscapital",
+        "label": "Capital of nome",
+        "type": "boolean"
+    },
+    {
+        "name": "accuracy",
+        "label": "Position accuracy",
+        "type": "text",
+        "help": "TODO!"
+    },
+    {
+        "name": "editors",
+        "label": "Editors",
+        "type": "multi_select",
+        "vocabulary_set": "persons"
+    },
+    {
+        "name": "status",
+        "label": "Status",
+        "type": "select",
+        "vocabulary_set": "status"
+    }
+]

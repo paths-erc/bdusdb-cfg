@@ -1,0 +1,45 @@
+[
+    {
+        "name": "id",
+        "label": "ID",
+        "type": "text",
+        "readonly": "1",
+        "hide": "1"
+    },
+    {
+        "name": "handno",
+        "label": "Hand number",
+        "type": "text",
+        "check": [
+            "int"
+        ]
+    },
+    {
+        "name": "modulartypology",
+        "label": "Modular typology",
+        "type": "select",
+        "vocabulary_set": "modular_typology"
+    },
+    {
+        "name": "writingaxis",
+        "label": "Axis",
+        "type": "select",
+        "vocabulary_set": "axis"
+    },
+    {
+        "name": "thickandthin",
+        "label": "Thick-and-thin style",
+        "type": "boolean"
+    },
+    {
+        "name": "identification",
+        "label": "Identification",
+        "type": "combo_select",
+        "get_values_from_tb": "paths__m_hands:identification"
+    },
+    {
+        "name": "writingnotes",
+        "label": "Notes on writing",
+        "type": "long_text"
+    }
+]

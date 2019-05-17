@@ -1,0 +1,40 @@
+[
+  {
+    "name": "id",
+    "label": "ID",
+    "type": "text",
+    "readonly": "1",
+    "hide": "1"
+  },
+  {
+    "name": "type",
+    "label": "Type",
+    "type": "select",
+    "vocabulary_set": "place_types"
+  },
+  {
+    "name": "place",
+    "label": "Place",
+    "type": "select",
+    "id_from_tb": "paths__places"
+  },
+  {
+    "name": "sourceinfo",
+    "label": "Source of information",
+    "type": "select",
+    "vocabulary_set": "production_info_source"
+  },
+  {
+    "name": "sourcenotes",
+    "label": "Notes on source",
+    "type": "long_text"
+  },
+  {
+    "name": "sort",
+    "label": "Sort",
+    "type": "text",
+    "check": [
+      "int"
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+[
+    {
+        "name": "id",
+        "label": "ID",
+        "type": "text",
+        "readonly": 1,
+        "hide": 1
+    },
+    {
+        "name": "fperiod",
+        "label": "Period",
+        "type": "select",
+        "vocabulary_set": "site_periods"
+    },
+    {
+        "name": "fperiodnote",
+        "label": "Notes on period",
+        "type": "long_text"
+    },
+    {
+        "name": "ftypology",
+        "label": "Typology",
+        "type": "select",
+        "vocabulary_set": "site_typology"
+    },
+    {
+        "name": "fdescription",
+        "label": "Description",
+        "type": "long_text"
+    }
+]

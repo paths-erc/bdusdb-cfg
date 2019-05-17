@@ -1,0 +1,13 @@
+{
+    "lang": "it",
+    "name": "paths",
+    "definition": "A BraDypUS database",
+    "status": "on",
+    "virtual_keyboard": "",
+    "search_code": "",
+    "dot_path": "\/usr\/local\/bin\/",
+    "api_login_as_user": "8",
+    "auth_login_as_user": "",
+    "ftp_string": "",
+    "gmapskey": "AIzaSyCLRylxZwGnCbbDE7pH-oUURTZHOre7h5o"
+}

@@ -1,0 +1,85 @@
+[
+    {
+        "name": "id",
+        "label": "ID",
+        "type": "text",
+        "readonly": true,
+        "disabled": true,
+        "hide": true
+    },
+    {
+        "name": "creator",
+        "label": "Record creator",
+        "type": "text",
+        "readonly": true,
+        "disabled": true,
+        "hide": true
+    },
+    {
+        "name": "name",
+        "label": "Name",
+        "type": "text"
+    },
+    {
+        "name": "type",
+        "label": "Type",
+        "type": "select",
+        "vocabulary_set": "persons_type"
+    },
+    {
+        "name": "profession",
+        "label": "Profession",
+        "type": "select",
+        "vocabulary_set": "profession"
+    },
+    {
+        "name": "patronymic",
+        "label": "Patronymic",
+        "type": "text"
+    },
+    {
+        "name": "origin",
+        "label": "Origin",
+        "type": "select",
+        "id_from_tb": "paths__places"
+    },
+    {
+        "name": "sex",
+        "label": "Sex",
+        "type": "select",
+        "vocabulary_set": "sex"
+    },
+    {
+        "name": "datefrom",
+        "label": "Date range from year",
+        "type": "text",
+        "check": [
+            "int"
+        ]
+    },
+    {
+        "name": "dateto",
+        "label": "Date range to year",
+        "type": "text",
+        "check": [
+            "int"
+        ]
+    },
+    {
+        "name": "datenotes",
+        "label": "Notes on date",
+        "type": "long_text"
+    },
+    {
+        "name": "editors",
+        "label": "Editors",
+        "type": "multi_select",
+        "vocabulary_set": "persons"
+    },
+    {
+        "name": "status",
+        "label": "Status",
+        "type": "select",
+        "vocabulary_set": "status"
+    }
+]

@@ -1,0 +1,126 @@
+[
+    {
+        "name": "id",
+        "label": "ID",
+        "type": "text",
+        "hide": true
+    },
+    {
+        "name": "creator",
+        "label": "Record creator",
+        "type": "text",
+        "hide": "1"
+    },
+    {
+        "name": "zotero",
+        "label": "PAThs’ Zotero library ID",
+        "type": "text",
+        "check": [
+            "no_dupl"
+        ]
+    },
+    {
+        "name": "short",
+        "label": "Short form",
+        "type": "text",
+        "check": [
+            "no_dupl",
+            "not_empty"
+        ]
+    },
+    {
+        "name": "authors",
+        "label": "Authors",
+        "type": "text"
+    },
+    {
+        "name": "title",
+        "label": "Title",
+        "type": "text"
+    },
+    {
+        "name": "journal",
+        "label": "Journal/book",
+        "type": "combo_select",
+        "get_values_from_tb": "paths__biblio:journal"
+    },
+    {
+        "name": "volume",
+        "label": "Volume",
+        "type": "text"
+    },
+    {
+        "name": "issue",
+        "label": "Issue",
+        "type": "text"
+    },
+    {
+        "name": "voleditors",
+        "label": "Volume editors(s)",
+        "type": "combo_select",
+        "get_values_from_tb": "paths__biblio:voleditors"
+    },
+    {
+        "name": "series",
+        "label": "Series",
+        "type": "combo_select",
+        "get_values_from_tb": "paths__biblio:series"
+    },
+    {
+        "name": "seriesvol",
+        "label": "Series volume",
+        "type": "text"
+    },
+    {
+        "name": "year",
+        "label": "Year",
+        "type": "text"
+    },
+    {
+        "name": "place",
+        "label": "Place",
+        "type": "combo_select",
+        "get_values_from_tb": "paths__biblio:place"
+    },
+    {
+        "name": "pages",
+        "label": "Pages",
+        "type": "text"
+    },
+    {
+        "name": "isbn",
+        "label": "ISBN(s)",
+        "type": "long_text"
+    },
+    {
+        "name": "issn",
+        "label": "ISSN(s)",
+        "type": "long_text"
+    },
+    {
+        "name": "doi",
+        "label": "DOI",
+        "type": "text"
+    },
+    {
+        "name": "url",
+        "label": "URL",
+        "type": "long_text"
+    },
+    {
+        "name": "notes",
+        "label": "Notes",
+        "type": "long_text"
+    },
+    {
+        "name": "worldcat",
+        "label": "Worldcat",
+        "type": "text"
+    },
+    {
+        "name": "editors",
+        "label": "Editors",
+        "type": "multi_select",
+        "vocabulary_set": "persons"
+    }
+  ]

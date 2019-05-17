@@ -1,0 +1,101 @@
+[
+    {
+        "name": "id",
+        "label": "ID",
+        "type": "text",
+        "ready": true
+    },
+    {
+        "name": "creator",
+        "label": "Record creator",
+        "type": "text",
+        "hide": "1"
+    },
+    {
+        "name": "cc",
+        "label": "Clavis Coptica attributed to the title",
+        "type": "text",
+        "check": [
+            "no_dupl"
+        ]
+    },
+    {
+        "name": "workcc",
+        "label": "Clavis Coptica attributed to the work",
+        "type": "select",
+        "get_values_from_tb": "paths__works:cmcl",
+        "check": [
+            "not_empty"
+        ]
+    },
+    {
+        "name": "msid",
+        "label": "CLM",
+        "type": "select",
+        "get_values_from_tb": "paths__manuscripts:id",
+        "check": [
+            "not_empty"
+        ]
+    },
+    {
+        "name": "type",
+        "label": "Type",
+        "type": "select",
+        "vocabulary_set": "title_type"
+    },
+    {
+        "name": "description",
+        "label": "Description",
+        "type": "long_text"
+    },
+    {
+        "name": "modulartypology",
+        "label": "Modular typology",
+        "type": "select",
+        "vocabulary_set": "modular_typology"
+    },
+    {
+        "name": "writingaxis",
+        "label": "Axis",
+        "type": "select",
+        "vocabulary_set": "axis"
+    },
+    {
+        "name": "thickandthin",
+        "label": "Thick-and-thin style",
+        "type": "boolean"
+    },
+    {
+        "name": "text",
+        "label": "Text",
+        "type": "long_text"
+    },
+    {
+        "name": "translation",
+        "label": "Translation",
+        "type": "long_text"
+    },
+    {
+        "name": "taggedtext",
+        "label": "Tagged text",
+        "type": "long_text"
+    },
+    {
+        "name": "editors",
+        "label": "Editors",
+        "type": "multi_select",
+        "vocabulary_set": "persons"
+    },
+    {
+        "name": "editors",
+        "label": "Editors",
+        "type": "multi_select",
+        "vocabulary_set": "persons"
+    },
+    {
+        "name": "status",
+        "label": "Status",
+        "type": "select",
+        "vocabulary_set": "status"
+    }
+]

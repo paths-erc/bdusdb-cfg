@@ -1,0 +1,38 @@
+[
+    {
+        "name": "id",
+        "label": "ID",
+        "type": "text",
+        "readonly": "1",
+        "hide": "1"
+    },
+    {
+        "name": "toponym",
+        "label": "Place name",
+        "type": "text"
+    },
+    {
+        "name": "language",
+        "label": "Language",
+        "type": "combo_select",
+        "vocabulary_set":"language"
+    },
+    {
+        "name": "transcription",
+        "label": "Transcription",
+        "type": "text"
+    },
+    {
+        "name": "notes",
+        "label": "Notes",
+        "type": "text"
+    },
+    {
+        "name": "sort",
+        "label": "Sort",
+        "type": "text",
+        "check": [
+          "int"
+        ]
+    }
+]

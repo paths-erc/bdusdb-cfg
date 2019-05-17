@@ -1,0 +1,25 @@
+[
+    {
+        "name": "id",
+        "label": "ID",
+        "type": "text",
+        "readonly": "1",
+        "hide": "1"
+    },
+    {
+        "name": "short",
+        "label": "Short reference",
+        "type": "select",
+        "id_from_tb": "paths__biblio"
+    },
+    {
+        "name": "details",
+        "label": "Specific details",
+        "type": "text"
+    },
+    {
+        "name": "images",
+        "label": "Details about images",
+        "type": "long_text"
+    }
+]

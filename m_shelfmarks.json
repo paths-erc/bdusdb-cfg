@@ -1,0 +1,47 @@
+[
+    {
+        "name": "id",
+        "label": "ID",
+        "type": "text",
+        "readonly": "1",
+        "hide": "1"
+    },
+    {
+        "name": "fullsegnat",
+        "label": "CMCL's full segnat",
+        "type": "text",
+        "disabled": "1",
+        "hide": "1"
+    },
+    {
+        "name": "segnatid",
+        "label": "CMCL segnat",
+        "type": "text",
+        "disabled": "1",
+        "hide": "1"
+    },
+    {
+        "name": "collection",
+        "label": "Collection",
+        "type": "select",
+        "id_from_tb": "paths__collections"
+    },
+    {
+        "name": "shelfmark",
+        "label": "Shelfmark",
+        "type": "text"
+    },
+    {
+        "name": "pp",
+        "label": "f.\/ff. and\/or p.\/pp.",
+        "type": "text"
+    },
+    {
+        "name": "sort",
+        "label": "Sort",
+        "type": "text",
+        "check": [
+            "int"
+        ]
+    }
+]
