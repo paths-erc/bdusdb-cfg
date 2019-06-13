@@ -205,7 +205,7 @@
                 "name",
                 "type",
                 "profession",
-                "patronymic"
+                "patronymiccarnal"
             ],
             "plugin": [
                 "paths__m_nameforms",
@@ -278,7 +278,7 @@
         },
         {
             "name": "paths__m_nameforms",
-            "label": "Other name forms attestation",
+            "label": "Other name form attestations",
             "is_plugin": "1"
         },
         {

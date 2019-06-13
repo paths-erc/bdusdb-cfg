@@ -3,9 +3,8 @@
         "name": "id",
         "label": "ID",
         "type": "text",
-        "readonly": true,
-        "disabled": true,
-        "hide": true
+        "readonly": "1",
+        "disabled": "1"
     },
     {
         "name": "creator",
@@ -28,18 +27,29 @@
     },
     {
         "name": "profession",
-        "label": "Profession",
+        "label": "Profession \/ Rank",
         "type": "select",
         "vocabulary_set": "profession"
     },
     {
-        "name": "patronymic",
-        "label": "Patronymic",
+        "name": "patronymiccarnal",
+        "label": "Carnal son of",
         "type": "text"
     },
     {
-        "name": "origin",
-        "label": "Origin",
+        "name": "patronymicspirit",
+        "label": "Spiritual son of",
+        "type": "text"
+    },
+    {
+        "name": "placebirth",
+        "label": "Place of birth",
+        "type": "select",
+        "id_from_tb": "paths__places"
+    },
+    {
+        "name": "placeaffiliation",
+        "label": "Affiliation to",
         "type": "select",
         "id_from_tb": "paths__places"
     },
