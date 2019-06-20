@@ -520,6 +520,40 @@
         "type": "long_text"
     },
     {
+        "name": "pgmcol",
+        "label": "Colours",
+        "type": "multi_select",
+        "vocabulary_set": "pigment_colours"
+    },
+    {
+        "name": "pgmlocation",
+        "label": "Location",
+        "type": "multi_select",
+        "vocabulary_set": "ink_location"
+    },
+    {
+        "name": "pgmnotes",
+        "label": "Notes on pigments",
+        "type": "long_text"
+    },
+    {
+        "name": "blktype",
+        "label": "Black ink types",
+        "type": "multi_select",
+        "vocabulary_set": "black_types"
+    },
+    {
+        "name": "blklocation",
+        "label": "Black ink location",
+        "type": "multi_select",
+        "vocabulary_set": "ink_location"
+    },
+    {
+        "name": "blknotes",
+        "label": "Notes on black inks",
+        "type": "long_text"
+    },
+    {
         "name": "inks",
         "label": "Inks",
         "type": "multi_select",
