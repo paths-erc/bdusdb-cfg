@@ -42,6 +42,16 @@
         "type": "text"
     },
     {
+        "name": "hasbrother",
+        "label": "Carnal or spiritual brother of",
+        "type": "text"
+    },
+    {
+        "name": "hasfather",
+        "label": "Carnal or spiritual father of",
+        "type": "text"
+    },
+    {
         "name": "placebirth",
         "label": "Place of birth",
         "type": "select",
