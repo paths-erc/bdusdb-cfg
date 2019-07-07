@@ -9,5 +9,6 @@
     "api_login_as_user": "8",
     "auth_login_as_user": "",
     "ftp_string": "",
-    "gmapskey": "AIzaSyCLRylxZwGnCbbDE7pH-oUURTZHOre7h5o"
+    "gmapskey": "AIzaSyCLRylxZwGnCbbDE7pH-oUURTZHOre7h5o",
+    "maxImageSize": " 1500 "
 }
