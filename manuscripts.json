@@ -454,6 +454,12 @@
         ]
     },
     {
+        "name": "boardmat",
+        "label": "Board material",
+        "type": "select",
+        "vocabulary_set": "board_material"
+    },
+    {
         "name": "sewings",
         "label": "Presence of sewings",
         "type": "boolean"
