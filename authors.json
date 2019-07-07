@@ -79,6 +79,12 @@
         ]
     },
     {
+        "name": "episcopalsee",
+        "label": "Episcopal see",
+        "type": "select",
+        "id_from_tb": "paths__places"
+    },
+    {
         "name": "editors",
         "label": "Editors",
         "type": "multi_select",
