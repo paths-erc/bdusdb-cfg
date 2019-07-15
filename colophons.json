@@ -42,6 +42,17 @@
         "type": "long_text"
     },
     {
+        "name": "donationistitution",
+        "label": "Donated to istitution",
+        "type": "text"
+    },
+    {
+        "name": "istitutionplace",
+        "label": "Place of istitution",
+        "type": "select",
+        "id_from_tb": "paths__places"
+    },
+    {
         "name": "dialect",
         "label": "Dialects",
         "type": "multi_select",

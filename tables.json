@@ -150,6 +150,15 @@
                             "other": "id"
                         }
                     ]
+                },
+                {
+                    "other_tb": "paths__places",
+                    "fld": [
+                        {
+                            "my": "istitutionplace",
+                            "other": "id"
+                        }
+                    ]
                 }
             ]
         },
@@ -170,6 +179,17 @@
             ],
             "backlinks": [
                 "paths__works:paths__m_wkauthors:author"
+            ],
+            "link": [
+                {
+                    "other_tb": "paths__places",
+                    "fld": [
+                        {
+                            "my": "episcopalsee",
+                            "other": "id"
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -186,13 +206,33 @@
                 "area",
                 "episcopalsee"
             ],
-            "plugin": {
-                "0": "paths__m_biblio",
-                "1": "paths__m_toponyms",
-                "3": "paths__m_placephase"
-            },
+            "plugin": [
+                "paths__m_biblio",
+                "paths__m_toponyms",
+                "paths__m_placephase"
+            ],
             "backlinks": [
                 "paths__manuscripts:paths__m_msplaces:place"
+            ],
+            "link": [
+                {
+                    "other_tb": "paths__authors",
+                    "fld": [
+                        {
+                            "my": "id",
+                            "other": "episcopalsee"
+                        }
+                    ]
+                },
+                {
+                    "other_tb": "paths__colophons",
+                    "fld": [
+                        {
+                            "my": "id",
+                            "other": "istitutionplace"
+                        }
+                    ]
+                }
             ]
         },
         {
