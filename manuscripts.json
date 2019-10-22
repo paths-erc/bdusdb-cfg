@@ -36,6 +36,12 @@
         "type": "text"
     },
     {
+        "name": "dbmnt",
+        "label": "DBMNT",
+        "help": "Database of Medieval Nubian Texts",
+        "type": "text"
+    },
+    {
         "name": "alias",
         "label": "Alias",
         "type": "text"
@@ -51,6 +57,12 @@
         "label": "Only bookbinding preserved",
         "type": "boolean",
         "help": "Set to 1\/yes if manuscript is conserved in only one sigle fragment"
+    },
+    {
+        "name": "reusedinbinding",
+        "label": "Manuscript reused in bookbinding",
+        "type": "boolean",
+        "help": "Set to 1\/yes if manuscript has been reused in bookbinding"
     },
     {
         "name": "stratigraphy",
@@ -503,6 +515,16 @@
     {
         "name": "marginalnotes",
         "label": "Marginal notes",
+        "type": "long_text"
+    },
+    {
+        "name": "greekminuscule",
+        "label": "Greek minuscule script",
+        "type": "boolean"
+    },
+    {
+        "name": "greekminusculenotes",
+        "label": "Notes on greek minuscule script",
         "type": "long_text"
     },
     {
